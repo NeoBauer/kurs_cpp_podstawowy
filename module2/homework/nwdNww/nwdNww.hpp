@@ -13,6 +13,6 @@ int NWW(int lhs, int rhs)
 {
     int res = 0;
     if (lhs != 0 && rhs != 0)
-        res = (lhs * rhs) / (NWD(lhs, rhs));
+        res = (static_cast<long long>(lhs) * rhs) / (NWD(lhs, rhs));
     return std::abs(res);
 }
